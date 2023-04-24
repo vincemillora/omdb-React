@@ -1,0 +1,17 @@
+.footer-container {
+  width: 100%;
+  display: flex;
+  flex-wrap: nowrap;
+  align-items: center;
+  justify-content: center;
+}
+.footer-container .logo-text {
+  font-family: "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  text-decoration: none;
+  font-size: 0.8rem;
+  font-weight: semibold;
+  color: white;
+}
+.footer-container .logo-avatar {
+  margin-right: 15px;
+}

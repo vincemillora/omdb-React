@@ -1,0 +1,30 @@
+.movie-list-container .movie-grid {
+  display: flex;
+  flex-wrap: wrap;
+}
+.movie-list-container .movie-grid .movie-item {
+  padding: 5px;
+}
+.movie-list-container .no-movies {
+	margin-top: 20px;
+  padding: 10px;
+  text-align: center;
+  font-size: 1.5rem;
+	color: white;
+}
+
+@media only screen and (max-width: 600px) {
+	.movie-list-container .movie-grid .movie-item {
+		width: calc((100% / 3));
+	}
+}
+@media only screen and (min-width: 600px) and (max-width: 800px){
+	.movie-list-container .movie-grid .movie-item {
+		width: calc((100% / 4));
+	}
+}
+@media screen and (min-width: 800px) {
+	.movie-list-container .movie-grid .movie-item {
+		width: calc((100% / 5));
+	}
+}

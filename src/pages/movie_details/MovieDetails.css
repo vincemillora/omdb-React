@@ -1,0 +1,23 @@
+.movie-details-home-button {
+  padding: 10px;
+}
+.movie-details-home-button .button-text {
+  font-weight: bold;
+  display: flex;
+  align-items: center;
+}
+
+.movie-details-container {
+  padding: 5px;
+}
+.movie-details-container .no-movies {
+	margin-top: 20px;
+  padding: 10px;
+  text-align: center;
+  font-size: 1.5rem;
+	color: white;
+}
+.movie-details-container .no-movies .no-movie-caption {
+  margin-top: 10px;
+	font-size: 0.9rem;
+}

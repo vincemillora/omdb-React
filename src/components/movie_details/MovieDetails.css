@@ -1,0 +1,83 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@200;500&display=swap');
+
+.movie-details-container .movie-details {
+  display: flex;
+  flex-direction: row;
+	flex-wrap: wrap;
+}
+.movie-details-container .movie-background {
+  opacity: 0.1;
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-size: cover;
+}
+.movie-info-container .movie-title {
+  font-family: 'Raleway', sans-serif;
+  margin: 0 0;
+  margin-bottom: 10px;
+}
+.movie-info-container .favorite-button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.movie-info-container .sub-details-container {
+  display: flex;
+  align-items: center;
+}
+.sub-details-container .sub-details-item {
+  margin-right: 20px;
+}
+
+.movie-info-container .details-item-container {
+  margin-top: 30px;
+  display: flex;
+  flex-direction: row;
+	flex-wrap: wrap;
+}
+.details-item-container .details-item {
+  font-size: 0.85rem;
+}
+.details-item-container .details-item .details-item-title {
+  margin-right: 10px;
+}
+.details-item-container .remove-p-margin {
+  margin-block-start: 0px;
+  margin-block-end: 0px;
+  margin-inline-start: 0px;
+  margin-inline-end: 0px;
+}
+
+@media only screen and (max-width: 600px) {
+	.movie-details-container .movie-details .movie-info-container {
+		flex: 0 0 100%;
+    margin-top: 40px;
+    padding: 10px;
+	}
+  .movie-details-container .movie-details .movie-poster-container {
+		flex: 0 0 50%;
+    margin-right: auto;
+    margin-left: auto;
+	}
+  .details-item-container .details-item {
+    flex: 0 0 100%;
+  }
+}
+@media screen and (min-width: 600px) {
+	.movie-details-container .movie-details .movie-info-container {
+		width: calc(75% - 40px);
+    padding-left: 20px;
+    padding-right: 20px;
+	}
+  .movie-details-container .movie-details .movie-poster-container {
+		width: 25%;
+	}
+  .details-item-container .details-item {
+    flex: 50%;
+  }
+}
