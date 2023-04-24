@@ -4,17 +4,14 @@ import { Card, Skeleton } from 'antd';
 
 import './MovieList.css';
 
-import { useAppSelector } from '../../store/hooks';
-
 interface MovieListProps {
   isLoading: boolean;
   movies: Array<Movie>;
   totalCount: number;
+  searchTitle: string | null;
 }
 
-export const MovieList = ({ movies, isLoading, totalCount }: MovieListProps) => {
-  const title = useAppSelector(state => state.movies.title);
-
+export const MovieList = ({ movies, isLoading, totalCount, searchTitle }: MovieListProps) => {
   let movieCardList;
   let componentDisplay;
 
@@ -40,7 +37,7 @@ export const MovieList = ({ movies, isLoading, totalCount }: MovieListProps) => 
       )
     })
     componentDisplay = ( <div className='movie-grid'>{movieCardList}</div> )
-  } else if (title === null) {
+  } else if (searchTitle === null) {
     componentDisplay = (
       <div className='no-movies'>
         <div><AiOutlineSearch size={45}/></div>

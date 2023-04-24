@@ -196,6 +196,7 @@ export const Home = () => {
           isLoading={isLoading}
           movies={moviesFromState ? moviesFromState.items : []}
           totalCount={moviesTotalCount}
+          searchTitle={title}
         />
         {paginationComponent}
       </div>
@@ -207,6 +208,7 @@ export const Home = () => {
               isLoading={false}
               movies={favorites}
               totalCount={favorites.length}
+              searchTitle={title}
             />
           </div>
         ) : ""

@@ -14,10 +14,10 @@ type Story = StoryObj<typeof MovieCard>;
 export const SampleMovie: Story = {
   args: {
     movie: {
-      Title: 'The Shawshank Redemption',
-      Year: '1994',
-      Poster: 'https://picsum.photos/200/300',
-      imdbID: "1",
+      Title: 'Captain Marvel',
+      Year: '2019',
+      Poster: 'https://m.media-amazon.com/images/M/MV5BMTE0YWFmOTMtYTU2ZS00ZTIxLWE3OTEtYTNiYzBkZjViZThiXkEyXkFqcGdeQXVyODMzMzQ4OTI@._V1_SX300.jpg',
+      imdbID: "tt4154664",
     }
   },
 };

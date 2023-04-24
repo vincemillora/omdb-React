@@ -17,61 +17,69 @@ type Story = StoryObj<typeof MovieList>;
 export const WithMovies: Story = {
   args: {
     isLoading: false,
+    totalCount: 10,
+    searchTitle: "marvel",
     movies: [
       {
-        Title: 'Movie 1',
-        Year: '1991',
-        Poster: 'https://picsum.photos/200/300',
-        imdbID: "1",
+        Title: "Captain Marvel",
+        Year: "2019",
+        imdbID: "tt4154664",
+        Poster: "https://m.media-amazon.com/images/M/MV5BMTE0YWFmOTMtYTU2ZS00ZTIxLWE3OTEtYTNiYzBkZjViZThiXkEyXkFqcGdeQXVyODMzMzQ4OTI@._V1_SX300.jpg"
       },
       {
-        Title: 'Movie 2',
-        Year: '1992',
-        Poster: 'https://picsum.photos/200/300',
-        imdbID: "2",
+        Title: "Marvel One-Shot: Agent Carter",
+        Year: "2013",
+        imdbID: "tt3067038",
+        Poster: "https://m.media-amazon.com/images/M/MV5BZDIwZTM4M2QtMWFhYy00N2VmLWFlMjItMzI3NjBjYTc0OTMxXkEyXkFqcGdeQXVyNTE1NjY5Mg@@._V1_SX300.jpg"
       },
       {
-        Title: 'Movie Movie Movie Movie Movie Movie 3',
-        Year: '1993',
-        Poster: 'https://picsum.photos/200/300',
-        imdbID: "3",
+        Title: "Marvel One-Shot: All Hail the King",
+        Year: "2014",
+        imdbID: "tt3438640",
+        Poster: "https://m.media-amazon.com/images/M/MV5BZGFkMTZkMDQtNzM4Yy00YWEwLTkzOWEtZTMyNDRlNmJhYWJhXkEyXkFqcGdeQXVyNTE1NjY5Mg@@._V1_SX300.jpg"
       },
       {
-        Title: 'Movie 4',
-        Year: '1994',
-        Poster: 'https://picsum.photos/200/300',
-        imdbID: "4",
+        Title: "Marvel One-Shot: Item 47",
+        Year: "2012",
+        imdbID: "tt2247732",
+        Poster: "https://m.media-amazon.com/images/M/MV5BMjNlMzAxNmQtOGEwZi00NTEyLWI0NWYtMTlhNmE2YTA3ZDVhXkEyXkFqcGdeQXVyNTE1NjY5Mg@@._V1_SX300.jpg"
       },
       {
-        Title: 'Movie 5',
-        Year: '1995',
-        Poster: 'https://picsum.photos/200/300',
-        imdbID: "5",
+        Title: "Marvel One-Shot: A Funny Thing Happened on the Way to Thor's Hammer",
+        Year: "2011",
+        imdbID: "tt2011109",
+        Poster: "https://m.media-amazon.com/images/M/MV5BYmVlYTg3N2QtMWM2OS00YWQyLWI2M2MtMDc0ZjBkZjk1MTY3XkEyXkFqcGdeQXVyNTE1NjY5Mg@@._V1_SX300.jpg"
       },
       {
-        Title: 'Movie 6',
-        Year: '1996',
-        Poster: 'https://picsum.photos/200/300',
-        imdbID: "6",
+        Title: "Marvel One-Shot: The Consultant",
+        Year: "2011",
+        imdbID: "tt2011118",
+        Poster: "https://m.media-amazon.com/images/M/MV5BNGE4YjU5MDAtYzYzMC00M2RlLTk0NDgtNDU1MjgyMGI0MjI3XkEyXkFqcGdeQXVyNTE1NjY5Mg@@._V1_SX300.jpg"
       },
       {
-        Title: 'Movie 7',
-        Year: '1997',
-        Poster: 'https://picsum.photos/200/300',
-        imdbID: "7",
+        Title: "Marvel Studios: Assembling a Universe",
+        Year: "2014",
+        imdbID: "tt3591568",
+        Poster: "https://m.media-amazon.com/images/M/MV5BZjNiN2NhYzQtYmI1NC00NGRmLWE2MWYtNjAxNjMzZmYxNDJhXkEyXkFqcGdeQXVyODQ4MjU1MDk@._V1_SX300.jpg"
       },
       {
-        Title: 'Movie 8',
-        Year: '1998',
-        Poster: 'https://picsum.photos/200/300',
-        imdbID: "8",
+        Title: "Pokémon the Movie: Volcanion and the Mechanical Marvel",
+        Year: "2016",
+        imdbID: "tt5889204",
+        Poster: "https://m.media-amazon.com/images/M/MV5BZTUwZDEzZGEtYTJlYi00OTRkLWJmMzItODU0ZWViMTUyYjUzXkEyXkFqcGdeQXVyNzEyMDQ1MDA@._V1_SX300.jpg"
       },
       {
-        Title: 'Movie 9',
-        Year: '1999',
-        Poster: 'https://picsum.photos/200/300',
-        imdbID: "9",
+        Title: "Adventures of Captain Marvel",
+        Year: "1941",
+        imdbID: "tt0033317",
+        Poster: "https://m.media-amazon.com/images/M/MV5BNjg0NTk3NjUyNF5BMl5BanBnXkFtZTgwNDQ5MjM1MjE@._V1_SX300.jpg"
       },
+      {
+        Title: "Marvel Rising: Secret Warriors",
+        Year: "2018",
+        imdbID: "tt7728344",
+        Poster: "https://m.media-amazon.com/images/M/MV5BZGU5YTVlZTktNzgzMS00MGVlLTgyMGMtNWYwNTkwNGY1MzllXkEyXkFqcGdeQXVyNTAyODkwOQ@@._V1_SX300.jpg"
+      }
     ]
   },
 };
@@ -79,6 +87,17 @@ export const WithMovies: Story = {
 export const EmptyList: Story = {
   args: {
     isLoading: false,
+    totalCount: 0,
+    searchTitle: "marvel",
+    movies: []
+  },
+};
+
+export const InitialEmptyList: Story = {
+  args: {
+    isLoading: false,
+    totalCount: 0,
+    searchTitle: null,
     movies: []
   },
 };
@@ -86,6 +105,8 @@ export const EmptyList: Story = {
 export const Loading: Story = {
   args: {
     isLoading: true,
+    totalCount: 0,
+    searchTitle: "marvel",
     movies: []
   },
 };
